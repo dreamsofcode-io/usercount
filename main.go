@@ -33,5 +33,5 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println("users: ", count)
+	fmt.Println("users:", count)
 }
