@@ -27,7 +27,7 @@ func main() {
 	defer conn.Close(ctx)
 
 	var count int
-	err = conn.QueryRow(ctx, "SELECT COUNT(*) FROM public.users").Scan(&count)
+	err = conn.QueryRow(ctx, "SELECT COUNT(*) FROM public.user").Scan(&count)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Failed to query users count: %v\n", err)
 		os.Exit(1)
